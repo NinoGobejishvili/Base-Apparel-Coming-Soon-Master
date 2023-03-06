@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+ 
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <img class="logo" src="./images/logo.svg">
+      <img class="hero-mobile" src="./images/hero-mobile.jpg">
+      <section class="text">
+        <h1 class="pink">WE'RE</h1>
+        <h1 class="black">COMING SOON</h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <div class="validation">
+          <input class="mail-button"
+            placeholder="Email Address" 
+          />
+            <img class="icon-error" src="./images/icon-error.svg">
+          
+          <button class="arrow-button">
+            <img class="arrow" src="./images/icon-arrow.svg">
+          </button>
+              </div>
+        <div class="error">Pleace provide a valid e-mail</div>
+      </section>
+    </main>
+    <img class="hero-desktop" src="./images/hero-desktop.jpg">
+  </div>
+    <script>
+      const button = document.querySelector(".arrow-button")
+      const errorText = document.querySelector(".error")
+      const errorIcon = document.querySelector(".icon-error")
+      button.addEventListener('click',function(){
+        errorText.style.display = 'block'
+        errorIcon.style.display = 'inline'
+      })
+    </script>
+</body>
+</html>

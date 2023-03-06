@@ -1,0 +1,185 @@
+/* mobile design */
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    font-family: Josefin Sans;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    height: 100vh;
+    }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 375px;
+    }
+
+.hero-desktop{
+    display: none;
+    }
+
+.logo{
+    margin-right: auto;
+    padding: 30px;
+    }
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;  
+    gap: 16px; 
+    }  
+
+h1{    
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 11px;
+    text-align: center;
+    }    
+    
+.pink{
+    color: #CE9898;
+    font-weight: 300;
+    }  
+   
+.black{
+    font-weight: 600;
+    color:#423A3A;
+    }    
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: #CE9898
+    } 
+
+.validation{
+    margin-top: 32px;
+    display: flex;
+    }
+
+    
+.mail-button{
+    height: 48px;
+    width: 311px;
+    border-radius: 28px;
+    border-color: #CE9898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #CE9898; 
+    opacity: 50%;
+    padding-left: 32px;
+    }   
+    
+.arrow-button{
+    height: 56px;
+    width: 100px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    border: none;
+    position: absolute;
+    margin-left: 249px;
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);    
+    } 
+    
+.error{
+    display: none;
+    color: 
+    #F96464;
+    font-size: 13px;
+    margin-left: 32px;
+    }  
+    
+.icon-error{
+    position: absolute;
+    display: none;
+    margin-left: 200px; 
+    margin-top: 14px;
+    }    
+
+
+/* desktop designe */
+      
+@media screen and (min-width: 960px){
+
+    .hero-mobile{
+        display:none;
+        }
+
+    .hero-desktop{
+        display: inline;
+        }
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px
+        }    
+
+    .main{
+        height: 800px;
+        width: 788px;
+        }
+
+    .logo{
+        margin-bottom: 90px;
+        }    
+
+    h1{    
+        font-size: 64px;
+        line-height: 71px;
+        letter-spacing: 18px;
+        text-align: left;
+        margin-bottom: 32px;
+        } 
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left; 
+        height: 84px;
+        width: 444px;
+        } 
+        
+    .mail-button{
+        height: 56px;
+        width: 445px;
+        font-size: 16px;
+        }   
+    
+    .arrow-button{        
+        height: 56px;
+        width: 100px;
+        border-radius: 28px;
+        margin-left: 300px;        
+        } 
+        
+    .error{
+        font-size: 16px;
+        margin-left: 32px;
+        }  
+        
+    .icon-error{
+        position: absolute;
+        display: none;
+        margin-left: 250px; 
+        margin-top: 14px;
+        }     
+
+    .mail-button{
+        height: 48px;
+        width: 311px;  
+        }
+                           
+    }    
