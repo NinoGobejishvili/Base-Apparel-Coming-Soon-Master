@@ -8,6 +8,8 @@ body{
     font-family: Josefin Sans;
     background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
     height: 100vh;
+    /* width: 100%; */
+    box-sizing: border-box;
     }
 
 .container{
@@ -15,25 +17,36 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
-    width: 375px;
+    height: 100vh;
+    max-height: 800px;
+    max-width: 375px;
+    width: 100%;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    box-sizing: border-box;
     }
+
+
 
 .hero-desktop{
     display: none;
     }
 
+.hero-mobile{
+    width: 100%;
+}    
+
 .logo{
-    margin-right: auto;
-    padding: 30px;
+    /* margin-right: auto; */
+    margin-bottom: 30px;
     }
 
 .text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 32px;  
     gap: 16px; 
+    box-sizing: border-box;
+    margin-top: 30px;
     }  
 
 h1{    
@@ -57,6 +70,7 @@ p{
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+    width: 100%;
     text-align: center;
     color: #CE9898
     } 
@@ -88,7 +102,7 @@ p{
     background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
     border: none;
     position: absolute;
-    margin-left: 249px;
+    margin-left: 248px;
     box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);    
     } 
     
@@ -97,7 +111,7 @@ p{
     color: 
     #F96464;
     font-size: 13px;
-    margin-left: 32px;
+    margin-left: 30px;
     }  
     
 .icon-error{
@@ -127,7 +141,7 @@ p{
         }    
 
     .main{
-        height: 800px;
+        height: 100vh;
         width: 788px;
         }
 
